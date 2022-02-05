@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int dec,i=0;
+    string hex;
+    char hn[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    cout<< "Enter your decimal number : ";
+    cin>>dec;
+    
+   while(dec>0)
+   {
+        i=dec%16;
+        hex=hn[i]+hex;
+        dec=dec/16;
+    }
+    
+    cout <<"Your Hexadecimal number : " << hex;
+
+    return 0;
+}
