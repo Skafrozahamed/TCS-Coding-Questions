@@ -9,10 +9,10 @@ int main()
   cin>>n;
   
   if(n%2==0){
-      cout<<"prime ";
+      cout<<"even ";
   }
   else{
-      cout<<n<<"not prime";
+      cout<<n<<"odd";
   }
  
     return 0;
