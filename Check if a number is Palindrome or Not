@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,temp,rev=0;
+    cin>>num;
+    temp=num;
+  while (num > 0) {
+      
+      int count = num % 10;
+      
+      rev = rev * 10 + count;
+      
+      num = num / 10;
+   }
+  
+   
+ if(temp==rev){
+     cout<<temp<<" is a Palindrome Number";
+ }
+ else{
+     cout <<temp << " is not a Palindrome Number";
+ }
+    return 0;
+}
