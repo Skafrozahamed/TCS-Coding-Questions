@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, num;
+    bool is_a_Prime = true;
+
+    cout << "Enter a positive number : ";
+    cin >> num;
+    if (num == 0 || num == 1) {
+        is_a_Prime = false;
+    }
+    else {
+        for (i = 2; i < num ; i++) {
+            if (num % i == 0) {
+                is_a_Prime = false;
+                break;
+            }
+        }
+    }
+    if (is_a_Prime)
+        cout << num << " is a prime number";
+    else
+        cout << num << " is not a prime number";
+
+    return 0;
+}
