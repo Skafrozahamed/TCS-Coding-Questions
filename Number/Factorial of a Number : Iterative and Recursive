@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, num,ans=1;
+    cout<<"Given a number ";
+    cin>> num;
+   
+   for ( i = 1; i <= num; i++) {
+      ans = ans * i;
+   }
+   
+   cout <<"Factorial of "<<num <<" is "<<ans;
+    
+    return 0;
+}
