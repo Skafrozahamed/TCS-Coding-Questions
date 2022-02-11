@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+   int N , k, ans;
+   cout<<"enter a number ";
+   cin>>N;
+   cout<< "enter the power ";
+   cin>>k;
+    ans=pow(N,k);
+    cout<< "your answer is " << ans;
+    return 0;
+}
