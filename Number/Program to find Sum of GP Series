@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+   int a=3 , r=5 , n=2, sum;
+   
+   for (int i = 1; i <= n; i++)
+    {
+        int temp=(pow(r,n)-1);
+        sum= (a*temp)/(r-1) ;
+    }
+    
+    cout<< sum;
+}
