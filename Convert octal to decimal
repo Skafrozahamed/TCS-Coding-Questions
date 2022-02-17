@@ -1,0 +1,21 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int dec=0,oct,i=0;
+  
+    cout <<" Enter your octal number : " ;
+    
+    cin>>oct;
+    while(oct>0)
+    {
+        dec=dec+((oct%10)*pow(8,i));
+        oct=oct/10;
+        i++;
+    }
+cout<< "Your decimal number : " <<dec;
+    return 0;
+}
