@@ -1,0 +1,45 @@
+#include <iostream>
+#include <math.h>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+  char h[100];
+  long int i,j=0,len,sum=0,temp,oct=0;
+   cout<<"Enter a hexa number : ";
+   cin>>h;
+   len=strlen(h);
+   
+    for(i=len-1;i>=0;i--)
+    {
+        if(h[i]>='0' && h[i]<='9')
+        {
+            sum=sum+((h[i]-48)*pow(16,j));
+            j++;
+        }
+        
+        else if(h[i]>='A' && h[i]<='F')
+        {
+            sum=sum+((h[i]-55)*pow(16,j));
+            j++;
+        }
+    }
+    temp = sum;
+   
+   
+    int k=0;
+    
+    while(sum>0)
+   {
+        oct = oct + ((sum%8)*pow(10,k));
+        sum=sum/8;
+        k++;
+    }
+    
+    cout <<"Your octal number : " << oct;
+
+
+    return 0;
+}
