@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+  long int oct,dec=0,i=0,j=0,temp;
+  
+  
+    cout <<" Enter your octal number : " ;
+    
+    cin>>oct;
+    while(oct>0)
+    {
+        dec=dec+((oct%10)*pow(8,i));
+        oct=oct/10;
+        i++;
+    }
+    temp = dec;
+    
+    string hex;
+    char hn[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    
+   while(temp>0)
+   {
+        j=temp%16;
+        hex=hn[j]+hex;
+        temp=temp/16;
+    }
+    
+    cout <<"Your Hexadecimal number : " << hex;
+
+
+    return 0;
+}
