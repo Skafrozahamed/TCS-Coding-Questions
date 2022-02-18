@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+  long int oct,dec=0,i=0,j=0,temp;
+  
+  
+    cout <<" Enter your octal number : " ;
+    
+    cin>>oct;
+    while(oct>0)
+    {
+        dec=dec+((oct%10)*pow(8,i));
+        oct=oct/10;
+        i++;
+    }
+    temp = dec;
+    
+    int c = 0;
+    
+    while(temp>0){
+        c = c + ((temp%2)*pow(10,j));
+        temp=temp/2;
+        j++;
+    }
+    cout <<"Your Number in Binary : " << c;
+
+
+    return 0;
+}
