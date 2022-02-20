@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int main()
+{
+    int x,y;
+    
+    cout <<" Enter your minimum number : ";
+    cin>>x;
+    cout << " Enter your maximum number : ";
+    cin>>y;
+    cout << " Your all Prime Numbers " <<x <<" to "<< y<< " is ";
+    for(int i =x ; i<y;i++)
+    {
+        int num=i;
+        int x=0;
+     for (int j=2; j<num;j++) 
+     {
+      if (num %j==0) 
+      {
+        x=1;
+        break;
+      }
+    
+     }
+     if (x==0)
+     {
+        cout << i <<" ";
+     }
+    }
+    return 0;
+}
