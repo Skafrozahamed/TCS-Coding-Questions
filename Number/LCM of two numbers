@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int num1 , num2,lcm=0 ;
+cout<< " Take two number : ";
+cin>> num1>> num2;
+	int ans;
+	for (int i = 1,j=1; i <= num1, j<=num2; i++,j++) {
+		if (num1 % i == 0 && num2 % j == 0) {
+			ans = i=j;
+		}
+	}
+	lcm=((num1*num2)/ans);
+	cout << "The LCM of the two numbers is "<<lcm;
+    return 0;
+}
