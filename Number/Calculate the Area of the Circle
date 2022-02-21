@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   double n,area;
+   cin>>n;
+   area=3.14*n*n;
+   cout<< area;
+
+    return 0;
+}
