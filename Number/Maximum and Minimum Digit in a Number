@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   long num,temp,max,min,num1;
+   cout<<"Enter an number:";
+  cin>>num;
+  num1=num;
+  max=0;
+  min=9;
+   while(num!=0)
+   {
+     temp=num%10;
+     if(temp>max)
+       max=temp;
+     if(temp<min)
+     min=temp;
+     num=num/10;
+   }
+   cout<<"Maximum and Minimum Digit in this "<<num1<<" is : "<<max<<" & "<< min<<" .";
+   
+   return 0;
+}
